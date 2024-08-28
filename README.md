@@ -1,7 +1,7 @@
-### Code for P3
-论文地址: https://arxiv.org/abs/2408.05541 
+### Code for P3: A Policy-Driven, Pace-Adaptive, and Diversity-Promoted Framework for Optimizing LLM Training
+This is the repository for: https://arxiv.org/abs/2408.05541 
 ![image](framework.jpg)
-该脚本使用各种选择策略进行训练，以优化训练过程，包括支持 SPL 和 DPP 等多样化的选择机制。
+This script supports the use of various selection strategies to optimize the LLM training process, including support for diversified selection mechanisms such as P3, SPL, Ramdom Selection.
 
 ## Prerequisites
 Before running the script, ensure you have the following installed:
@@ -13,16 +13,19 @@ Before running the script, ensure you have the following installed:
 - tqdm
 
 ## How to run 
-python train.py --sort [排序类型] --select_num [选择数量] --epoch [训练轮数] --alpha [alpha 值]
+```
+python train.py --sort [sort type] --select_num [selection number] --epoch [number of training epochs] --alpha [alpha value]
+```
+- sort: Specifies the method used for sorting or selecting data during training, with options including 'random', 'total', 'policy_sampling_SPL', and 'policy_sampling_SPL_DPP'.
+- select_num: Sets the number of selections or samples used for training, default value is 10,000.
+- epoch: The number of training epochs, default value is 5.
+- alpha: Influences the control of the difficulty range.
 
-- sort: 指定在训练期间用于排序或选择数据的方法, 可选值为 'random', 'total', 'policy_sampling_SPL', 和 'policy_sampling_SPL_DPP'
-- select_num: 设置用于训练的选择或样本的数量, 默认值为 10,000
-- epoch: 训练的轮数, 默认值为 5
-- alpha: 影响在难度范围的控制
 
-## 其他
-1. 确保根据您的具体计算环境和数据集位置，适当设置脚本中的所有路径和配置。
-2. 脚本可能需要调整参数或配置，以针对不同的数据集或训练条件进行优化。
+## Additional Notes
+Ensure all paths and configurations in the script are appropriately set according to your specific computing environment and dataset location.
+The script may need parameter or configuration adjustments to optimize for different datasets.
+
 
 ## Citation
 If you find this useful in your research, please consider citing
