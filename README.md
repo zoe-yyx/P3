@@ -1,4 +1,4 @@
-### Code for P3: A Policy-Driven, Pace-Adaptive, and Diversity-Promoted Framework for Optimizing LLM Training
+### P3: A Policy-Driven, Pace-Adaptive, and Diversity-Promoted Framework for Optimizing LLM Training
 This is the repository for : https://arxiv.org/abs/2408.05541.
 ![image](framework.jpg)
 This script supports the use of various selection strategies to optimize the LLM training process, including support for diversified selection mechanisms such as P3, SPL, Ramdom Selection.
