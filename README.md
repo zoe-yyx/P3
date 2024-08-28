@@ -1,7 +1,6 @@
 ### Code for P3
-论文地址: https://arxiv.org/abs/2408.05541 \par
+论文地址: https://arxiv.org/abs/2408.05541 
 ![image](framework.jpg)
-
 该脚本使用各种选择策略进行训练，以优化训练过程，包括支持 SPL 和 DPP 等多样化的选择机制。
 
 ## Prerequisites
@@ -27,7 +26,7 @@ python train.py --sort [排序类型] --select_num [选择数量] --epoch [训�
 
 ## Citation
 If you find this useful in your research, please consider citing
-
+```
 @misc{yang2024p3policydrivenpaceadaptivediversitypromoted,
       title={P3: A Policy-Driven, Pace-Adaptive, and Diversity-Promoted Framework for Optimizing LLM Training}, 
       author={Yingxuan Yang and Huayi Wang and Muning Wen and Weinan Zhang},
@@ -37,3 +36,4 @@ If you find this useful in your research, please consider citing
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2408.05541}, 
 }
+```
