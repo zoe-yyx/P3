@@ -1,5 +1,7 @@
 ### Code for P3
-论文地址: https://arxiv.org/abs/2408.05541
+论文地址: https://arxiv.org/abs/2408.05541 \par
+![image](framework.jpg)
+
 该脚本使用各种选择策略进行训练，以优化训练过程，包括支持 SPL 和 DPP 等多样化的选择机制。
 
 ## Prerequisites
